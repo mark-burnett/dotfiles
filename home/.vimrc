@@ -8,22 +8,18 @@ call vundle#begin()
 " required!
 Plugin 'VundleVim/Vundle.vim'
 
-" Plugin 'Valloric/YouCompleteMe'
+Plugin 'davidhalter/jedi-vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'cespare/vim-bclose'
-" Plugin 'scrooloose/syntastic'
+" Plugin 'vim-syntastic/syntastic'
 Plugin 'sjbach/lusty'
 Plugin 'sjl/gundo.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-markdown'
-Plugin 'wting/rust.vim'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'cespare/vim-toml'
 Plugin 'godlygeek/tabular'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'peter-edge/vim-capnp'
 
-Plugin 'elzr/vim-json'
 Plugin 'xolox/vim-colorscheme-switcher'
 Plugin 'xolox/vim-misc'
 
