@@ -1,0 +1,7 @@
+[user]
+	email = mark.m.burnett@gmail.com
+	name = Mark Burnett
+[push]
+	default = current
+[alias]
+	g = log --graph --oneline --decorate
