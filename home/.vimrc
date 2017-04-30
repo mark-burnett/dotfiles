@@ -17,7 +17,7 @@ Plugin 'sjl/gundo.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-markdown'
 Plugin 'ekalinin/Dockerfile.vim'
-Plugin 'cespare/vim-toml'
+" Plugin 'cespare/vim-toml'
 Plugin 'godlygeek/tabular'
 Plugin 'SirVer/ultisnips'
 Plugin 'vimwiki/vimwiki'
@@ -37,12 +37,6 @@ nmap <F9> :PrevColorScheme<CR>
 " - Initial configuration                                                    -
 " ----------------------------------------------------------------------------
 
-" This hushes a lusty explorer error message.
-"let g:LustyExplorerSuppressRubyWarning = 1
-
-"let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
-
-
 " Store swap and backup files in a less obnoxious location
 let tempdir = expand("/tmp/$USER-vim-temp")
 if (!isdirectory(tempdir))
@@ -53,7 +47,6 @@ let &backupdir = tempdir
 
 
 " Map a leader
-"
 let mapleader=','
 let maplocalleader=','
 
@@ -147,10 +140,6 @@ let g:gundo_preview_bottom = 1
 " Automatically delete hidden fugitive buffers.
 autocmd BufReadPost fugitive://* set bufhidden=delete
 
-" Open NERDTree if no other arguments were specified at the command line
-"autocmd vimenter * if !argc() | NERDTree | endif
-":nnoremap <silent> <leader>nt :NERDTreeToggle<CR>
-
 let g:syntastic_html_tidy_ignore_errors=["proprietary attribute"]
 
 let g:UltiSnipsExpandTrigger = "<tab>"
@@ -205,8 +194,6 @@ nmap <silent> Q gqap
 " ----------------------------------------------------------------------------
 " - Filetype detection                                                       -
 " ----------------------------------------------------------------------------
-"filetype plugin indent on
-
 " Force *.md to be for markdown, not modula...
 autocmd BufNewFile,BufRead *.md set ft=markdown spell
 
