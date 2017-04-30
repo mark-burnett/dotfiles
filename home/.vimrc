@@ -19,6 +19,8 @@ Plugin 'tpope/vim-markdown'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'cespare/vim-toml'
 Plugin 'godlygeek/tabular'
+Plugin 'SirVer/ultisnips'
+Plugin 'vimwiki/vimwiki'
 
 Plugin 'xolox/vim-colorscheme-switcher'
 Plugin 'xolox/vim-misc'
@@ -151,6 +153,13 @@ autocmd BufReadPost fugitive://* set bufhidden=delete
 
 let g:syntastic_html_tidy_ignore_errors=["proprietary attribute"]
 
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsSnippetDir = "$HOME/.vim/UltiSnips"
+
+let g:vimwiki_list = [{'auto_toc': 1}]
+let g:vimwiki_table_mappings = 0
 
 " ----------------------------------------------------------------------------
 " - Colors                                                                   -
@@ -205,6 +214,7 @@ autocmd Filetype ruby setlocal sw=2 sts=2 ts=2
 autocmd Filetype puppet setlocal sw=2 sts=2 ts=2
 autocmd Filetype yaml setlocal sw=2 sts=2 ts=2
 autocmd Filetype json setlocal sw=2 sts=2 ts=2
+autocmd Filetype vimwiki setlocal sw=2 sts=2 ts=2 spell
 
 autocmd Filetype rst set spell
 
