@@ -197,11 +197,11 @@ nmap <silent> Q gqap
 " Force *.md to be for markdown, not modula...
 autocmd BufNewFile,BufRead *.md set ft=markdown spell
 
-autocmd Filetype ruby setlocal sw=2 sts=2 ts=2
-autocmd Filetype puppet setlocal sw=2 sts=2 ts=2
-autocmd Filetype yaml setlocal sw=2 sts=2 ts=2
 autocmd Filetype json setlocal sw=2 sts=2 ts=2
+autocmd Filetype puppet setlocal sw=2 sts=2 ts=2
+autocmd Filetype ruby setlocal sw=2 sts=2 ts=2
 autocmd Filetype vimwiki setlocal sw=2 sts=2 ts=2 spell
+autocmd Filetype yaml setlocal sw=2 sts=2 ts=2
 
 autocmd Filetype rst set spell
 
