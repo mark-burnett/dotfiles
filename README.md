@@ -12,6 +12,8 @@ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev li
 
 git clone git://github.com/andsens/homeshick.git ~/.homesick/repos/homeshick
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+
 
 source ~/.homesick/repos/homeshick/homeshick.sh
 homeshick clone git@github.com:mark-burnett/dotfiles.git
