@@ -5,3 +5,5 @@
 	default = current
 [alias]
 	g = log --graph --oneline --decorate
+[gitreview]
+	username = mark-burnett
