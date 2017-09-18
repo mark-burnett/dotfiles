@@ -4,7 +4,7 @@
 [push]
 	default = current
 [alias]
-	g = log --graph --oneline --decorate
+	g = log --graph --oneline --decorate --show-notes
 	r = reflog --date=relative --decorate
 [gitreview]
 	username = mark-burnett
