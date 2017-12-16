@@ -1,2 +1,2 @@
-export GOROOT=/usr/lib/go-1.8
-push_path $GOROOT/bin
+push_path /usr/local/go/bin
+push_path $HOME/go/bin

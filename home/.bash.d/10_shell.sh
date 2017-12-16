@@ -24,5 +24,8 @@ else
     alias ls='ls --color=auto'
 fi
 
+# Disable software flow control (which makes CTRL-S effectively lock the terminal)
+stty -ixon
+
 push_path $HOME/.bin
 push_path /usr/local/sbin
